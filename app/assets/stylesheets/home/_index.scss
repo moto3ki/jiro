@@ -1,0 +1,29 @@
+.home {
+  height: 100vh;
+  background-color: $jiro_yellow;
+  &__header {
+    .title {
+      color: $jiro_red;
+      font-size: xx-large;
+      text-align: center;
+    }
+    .sub-title {
+      display: flex;
+      justify-content: center;
+      align-items: baseline;
+      .shop-jiro {
+        font-size: xx-large;
+      }
+      .shop-name {
+        font-size: x-large;
+      }
+    }
+  }
+  &__main-container {
+    text-align: center;
+  }
+  &__footer {
+    .comment{
+    }
+  }
+}
