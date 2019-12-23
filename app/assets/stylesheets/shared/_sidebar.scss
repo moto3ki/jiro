@@ -1,0 +1,25 @@
+.sidebar{
+  float: left;
+  width: 130px;
+  height: 100vh;
+  background-color: $jiro_orange;
+  border-right: solid 1px ;
+  .jiro-now{
+    // color: red;
+  }
+  .jiro-previous{
+    // color: red;
+  }
+  .jiro-inspire{
+    // color: red;
+  }
+  .other {
+    // color: red;
+  }
+    .title {
+      color: $jiro_red;
+    }
+    .shopname {
+      color: black;
+    }
+}
