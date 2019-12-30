@@ -1,4 +1,11 @@
 .sidebar
+  .login
+  - if user_signed_in?
+    .login__name
+      = current_user.nickname
+    = link_to "ログアウト", destroy_user_session_path, method: :DELETE, class: 'btn'
+  - else
+    = link_to "ログイン", new_user_registration_path, method: :GET, class: 'btn'
   .jiro-now
     .title
       ラーメン二郎
