@@ -15,7 +15,8 @@ Things you may want to cover:
 ## 1. users Table
 |Column|Type|Options|
 |------|----|-------|
-|nickname|string|null: false|
+|email|string|null: false, unique: true|
+|nickname|string|null: false, unique: true|
 |password|string|null: false|
 
 ### Association

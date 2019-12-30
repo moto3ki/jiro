@@ -4,13 +4,25 @@
   height: 100vh;
   background-color: $jiro_orange;
   border-right: solid 1px ;
-  .jiro-now{
+    .login__name {
+      font-size: x-large;
+    }
+    .btn {
+      background-color: $jiro_red;
+      border: 1.3px solid black;
+      color: black;
+      text-decoration: none;
+      border-radius: 4px;
+      font-size: x-large;
+      padding: 3px;
+    }
+  .jiro-now {
     // color: red;
   }
-  .jiro-previous{
+  .jiro-previous {
     // color: red;
   }
-  .jiro-inspire{
+  .jiro-inspire {
     // color: red;
   }
   .other {
