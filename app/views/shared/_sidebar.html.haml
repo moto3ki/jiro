@@ -13,6 +13,11 @@
         %ul 三田本店
         %ul 目黒店
         %ul 仙川店
+        - @shops.each do |shop|
+          -# = shop.name あとで消す
+          = link_to shop.name, shop
+          = link_to '編集', edit_shop_path(shop)
+          = link_to '削除', shop_path(shop), method: :DELETE
 
   .jiro-previous
     .title
@@ -31,3 +36,5 @@
   .other
     .title
       その他
+    .title
+    = link_to "店舗新規作成", new_shop_path, method: :GET, class: 'shoplist-edit'

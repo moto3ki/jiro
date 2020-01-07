@@ -1,0 +1,32 @@
+%main.shops-show
+  .l-container
+    = render "shared/sidebar"
+    .l-content
+      .l-content__head
+        .title
+          ラーメン
+        .sub-title
+          .shop-jiro
+            二郎　
+          .shop-name
+            = @shop.name
+            店
+      .l-content__shop
+        .shop-address
+          = @shop.address
+        .shop-horiday
+          = @shop.horiday
+        .shop-opening-hours
+          = @shop.opening_hours
+        .shop-map
+          = @shop.map
+          -# 今後、店舗写真を投稿
+        .shop-menu
+          = @shop.menu
+        .shop-rule
+          = @shop.rule
+        .shop-noodle_image
+          -# ラーメンの写真（noodle_images）
+          =image_tag("/top_image/top.jpg", width: "45%" , alt: "top", class: "top-image")
+        .shop-detail
+          = @shop.detail

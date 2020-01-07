@@ -39,6 +39,7 @@ Things you may want to cover:
 ## 3. shops Table
 |Column|Type|Options|
 |------|----|-------|
+|user_id|integer|null: false, foreign_key: true|
 |name|string|null: false|
 |address|string|null: false|
 |map|string|null: false|

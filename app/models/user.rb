@@ -5,7 +5,7 @@ class User < ApplicationRecord
          :recoverable, :rememberable, :validatable
   
   # has_many :visit_counts, dependent: :destroy
-  # has_many :shops
+  has_many :shops
 
   validates :nickname,  presence: true, uniqueness: true
 
