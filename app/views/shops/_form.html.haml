@@ -1,0 +1,29 @@
+.l-content__inner
+  = form_with(model: @shop) do |f|
+    .form
+      .label.clearfix
+        .label__top 店舗名
+        = f.text_field :name, class: 'form-panel'
+      .label.clearfix
+        .label__top 住所
+        = f.text_field :address, class: 'form-panel'
+      .label.clearfix
+        .label__top 地図
+        = f.text_field :map, class: 'form-panel'
+      .label.clearfix
+        .label__top 定休日
+        = f.text_field :horiday, class: 'form-panel'
+      .label.clearfix
+        .label__top 営業時間
+        = f.text_field :opening_hours, class: 'form-panel'
+      .label.clearfix
+        .label__top メニュー
+        = f.text_field :menu, class: 'form-panel'
+      .label.clearfix
+        .label__top ローカルルール
+        = f.text_field :rule, class: 'form-panel'
+      .label.clearfix
+        .label__top メニュー詳細
+        = f.text_field :detail, class: 'form-panel'
+      .label.clearfix
+        = f.submit "送信", class: 'form-submit'
