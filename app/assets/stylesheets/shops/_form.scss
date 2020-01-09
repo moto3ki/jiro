@@ -1,0 +1,13 @@
+.form-container {
+  overflow: hidden;
+  display: flex;
+  .form-content {
+    height: auto;
+    min-height: 100vh;
+    background-color: $jiro_yellow;
+    padding-bottom: 32768px;
+    margin-bottom: -32768px;
+    justify-content: flex-start;
+    width: calc(100vw - 130px);
+  }
+}
