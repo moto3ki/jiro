@@ -1,8 +1,9 @@
-  .home-container {
+  .l-container {
     overflow: hidden;
     display: flex;
-    .home-content {
-      height: 100vh;
+    .l-content {
+      height: auto;
+      min-height: 100%;
       background-color: $jiro_yellow;
       padding-bottom: 32768px;
       margin-bottom: -32768px;
@@ -26,11 +27,14 @@
           }
         }
       }
-      &__main-container {
-        text-align: center;
-      }
-      &__footer {
-        .comment{
+      &__shop {
+        font-size: large;
+        .shop-content {
+          text-align: center;
+          margin: 35px 0 35px 0;
+        }
+        .shop-noodleimage {
+          text-align: center;
         }
       }
     }

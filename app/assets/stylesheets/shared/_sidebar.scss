@@ -1,7 +1,10 @@
 .sidebar{
-  float: left;
+  padding-bottom: 10000px;
+  margin-bottom: -10000px;
+  justify-content: flex-start;
   width: 130px;
-  height: 100vh;
+  height: auto;
+  min-height: 100%;
   background-color: $jiro_orange;
   border-right: solid 1px ;
     .login__name {

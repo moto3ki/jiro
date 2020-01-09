@@ -12,21 +12,21 @@
             = @shop.name
             店
       .l-content__shop
-        .shop-address
+        .shop-content
           = @shop.address
-        .shop-horiday
+        .shop-content
           = @shop.horiday
-        .shop-opening-hours
+        .shop-content
           = @shop.opening_hours
-        .shop-map
+        .shop-content
           = @shop.map
           -# 今後、店舗写真を投稿
-        .shop-menu
+        .shop-content
           = @shop.menu
-        .shop-rule
+        .shop-content
           = @shop.rule
-        .shop-noodle_image
+        .shop-noodleimage
           -# ラーメンの写真（noodle_images）
           =image_tag("/top_image/top.jpg", width: "45%" , alt: "top", class: "top-image")
-        .shop-detail
+        .shop-content
           = @shop.detail
