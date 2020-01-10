@@ -1,7 +1,6 @@
 class ShopsController < ApplicationController
   before_action :set_shop, only: [:edit, :update, :destroy]
   before_action :set_sidebar, only: [:show, :new, :create, :edit, :update]
-  # before_action :set_noodle_image, only: [:edit, :update]
 
   def show
     @shop = Shop.find(params[:id])
@@ -9,16 +8,15 @@ class ShopsController < ApplicationController
 
   def new
     @shop = current_user.shops.new
-    # @noodle_images = current_user.NoodleImage.new
+    @shop.noodle_images.build
   end
 
   def create
     @shop = current_user.shops.new(shop_params)
-    if @shop.save
-      redirect_to root_path
-    else
-      render :new
-    end
+    @shop.save!
+    redirect_to root_path
+  rescue
+    render :new
   end
 
   def edit
@@ -39,20 +37,12 @@ class ShopsController < ApplicationController
 
   private
   def shop_params
-    params.require(:shop).permit(:name, :address, :map, :horiday, :opening_hours, :menu, :rule, :detail)
+    params.require(:shop).permit(:name, :address, :map, :horiday, :opening_hours, :menu, :rule, :detail, noodle_images_attributes: [:id,:image])
   end
-
-  # def noodle_image_params
-  #   params.require(:noodle_images).require(:image)
-  # end
 
   def set_shop
     @shop = current_user.shops.find(params[:id])
   end
-
-  # def set_noodle_image
-  #   @noodle_image = NoodleImage.find(params[:id])
-  # end
 
   def set_sidebar
     @shops = Shop.where(params[:id])

@@ -10,10 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_12_31_092639) do
+ActiveRecord::Schema.define(version: 2020_01_09_080520) do
+
+  create_table "noodle_images", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
+    t.string "image", null: false
+    t.bigint "shop_id", null: false
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.index ["shop_id"], name: "index_noodle_images_on_shop_id"
+  end
 
   create_table "shops", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
-    t.integer "user_id", null: false
+    t.bigint "user_id", null: false
     t.string "name", null: false
     t.string "address", null: false
     t.string "map", null: false
@@ -24,6 +32,7 @@ ActiveRecord::Schema.define(version: 2019_12_31_092639) do
     t.text "detail"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_shops_on_user_id"
   end
 
   create_table "users", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
@@ -39,4 +48,6 @@ ActiveRecord::Schema.define(version: 2019_12_31_092639) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
 
+  add_foreign_key "noodle_images", "shops"
+  add_foreign_key "shops", "users"
 end

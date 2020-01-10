@@ -26,7 +26,6 @@
         .shop-content
           = @shop.rule
         .shop-noodleimage
-          -# ラーメンの写真（noodle_images）
-          =image_tag("/top_image/top.jpg", width: "45%" , alt: "top", class: "top-image")
+          = image_tag @shop.noodle_images.first.image.to_s
         .shop-content
           = @shop.detail

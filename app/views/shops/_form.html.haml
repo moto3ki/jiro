@@ -23,6 +23,10 @@
         .label__top ローカルルール
         = f.text_field :rule, class: 'form-panel'
       .label.clearfix
+        .label__top ローカルルール
+        = f.fields_for :noodle_images do |c|
+          = c.file_field :image
+      .label.clearfix
         .label__top メニュー詳細
         = f.text_field :detail, class: 'form-panel'
       .label.clearfix
