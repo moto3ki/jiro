@@ -27,8 +27,8 @@ Things you may want to cover:
 ## 2. visit_counts Table
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
-|shop_id|integer|null: false, foreign_key: true|
+|user_id|references|null: false, foreign_key: true|
+|shop_id|references|null: false, foreign_key: true|
 |visit_date|datetime|null: false|
 |count|integer|null: false|
 
@@ -39,7 +39,7 @@ Things you may want to cover:
 ## 3. shops Table
 |Column|Type|Options|
 |------|----|-------|
-|user_id|integer|null: false, foreign_key: true|
+|user_id|references|null: false, foreign_key: true|
 |name|string|null: false|
 |address|string|null: false|
 |map|string|null: false|
@@ -57,7 +57,7 @@ Things you may want to cover:
 ## 4. noodle_images Table
 |Column|Type|Options|
 |------|----|-------|
-|shop_id|integer|null: false, foreign_key: true|
+|shop_id|references|null: false, foreign_key: true|
 |image|string|null: false|
 
 ### Association

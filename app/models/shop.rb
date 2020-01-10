@@ -1,6 +1,7 @@
 class Shop < ApplicationRecord
   belongs_to :user
-  # has_many :noodle_images, dependent: :destroy
+  has_many :noodle_images, dependent: :destroy, inverse_of: :shop
+  accepts_nested_attributes_for :noodle_images
 
   validates :name,  presence: true
   validates :address,  presence: true
