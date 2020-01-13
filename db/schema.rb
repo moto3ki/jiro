@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_01_12_091454) do
+ActiveRecord::Schema.define(version: 2020_01_13_160103) do
 
   create_table "noodle_images", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.string "image", null: false
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(version: 2020_01_12_091454) do
   create_table "shops", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.string "name", null: false
+    t.string "address", null: false
     t.string "map", null: false
     t.string "horiday", null: false
     t.text "opening_hours", null: false
@@ -31,7 +32,6 @@ ActiveRecord::Schema.define(version: 2020_01_12_091454) do
     t.text "detail"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.string "address"
     t.float "latitude"
     t.float "longitude"
     t.index ["user_id"], name: "index_shops_on_user_id"
@@ -46,6 +46,7 @@ ActiveRecord::Schema.define(version: 2020_01_12_091454) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.string "nickname"
+    t.boolean "admin", default: false
     t.index ["email"], name: "index_users_on_email", unique: true
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true
   end
