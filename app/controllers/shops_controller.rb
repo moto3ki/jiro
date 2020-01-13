@@ -37,7 +37,7 @@ class ShopsController < ApplicationController
 
   private
   def shop_params
-    params.require(:shop).permit(:name, :address, :map, :horiday, :opening_hours, :menu, :rule, :detail, noodle_images_attributes: [:id,:image])
+    params.require(:shop).permit(:name, :address, :latitude, :longitude, :map, :horiday, :opening_hours, :menu, :rule, :detail, noodle_images_attributes: [:id,:image])
   end
 
   def set_shop
