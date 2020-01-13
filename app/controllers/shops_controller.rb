@@ -1,6 +1,7 @@
 class ShopsController < ApplicationController
   before_action :set_shop, only: [:edit, :update, :destroy]
   before_action :set_sidebar, only: [:show, :new, :create, :edit, :update]
+  before_action :if_not_admin, only: [:new, :create, :edit, :update, :destroy]
 
   def show
     @shop = Shop.find(params[:id])
@@ -46,5 +47,9 @@ class ShopsController < ApplicationController
 
   def set_sidebar
     @shops = Shop.where(params[:id])
+  end
+
+  def if_not_admin
+    redirect_to root_path unless current_user.admin?
   end
 end

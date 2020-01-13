@@ -92,6 +92,8 @@ GEM
     erubis (2.7.0)
     excon (0.68.0)
     execjs (2.7.0)
+    faker (2.8.0)
+      i18n (>= 1.6, < 1.8)
     ffi (1.11.3)
     fog-aws (3.5.2)
       fog-core (~> 2.1)
@@ -278,6 +280,7 @@ DEPENDENCIES
   chromedriver-helper
   coffee-rails (~> 4.2)
   devise
+  faker
   fog-aws
   font-awesome-rails
   geocoder
