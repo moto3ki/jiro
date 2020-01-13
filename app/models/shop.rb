@@ -3,6 +3,9 @@ class Shop < ApplicationRecord
   has_many :noodle_images, dependent: :destroy, inverse_of: :shop
   accepts_nested_attributes_for :noodle_images
 
+  geocoded_by :address
+  after_validation :geocode, if: :address_changed?
+
   validates :name,  presence: true
   validates :address,  presence: true
   validates :map,  presence: true

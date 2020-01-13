@@ -42,12 +42,15 @@ Things you may want to cover:
 |user_id|references|null: false, foreign_key: true|
 |name|string|null: false|
 |address|string|null: false|
+|latitude|string|:float|
+|longitude|string|:float|
 |map|string|null: false|
 |holiday|string|
 |opening_hours|text|null: false|
 |menu|text|null: false|
 |rule|text|
 |detail|text|
+
 
 ### Association
 - belongs_to :user
