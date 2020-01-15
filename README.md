@@ -1,17 +1,68 @@
-# README
+# アプリ名
+## ラーメン二郎　Webアプリ店
+### <img width="70%" alt="スクリーンショット 2020-01-15 2 19 57" src="https://user-images.githubusercontent.com/56962584/72366441-9b85ee80-373d-11ea-98fd-d9b48b2ecb24.png">
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
 
-Things you may want to cover:
 
-* Ruby version
+# 概要
+### スクールで学んだことを生かし、また行ったことのない実装も前衛的に挑戦し、オリジナルアプリを作成したため紹介します。
 
-* System dependencies
 
-* Configuration
 
-* Database creation
+# アプリへの思い
+### 私は生粋のジロリアン（ラーメン二郎をこよなく愛する）のため、以前、Yahooブログに開設されていたバイブルでもあるサイト（<http://ramen-jiro.site/pc_store/>）が使用できなくなったためとても悲しい思い出があります。そのため、デフォルトのサイトのようにシンプルで使いやすいWebアプリを作成したく作成しました。悪魔でも、ラーメン二郎のイメージ像を意識したためモダンなデザインでないのはご了承下さい。
+
+
+
+# アプリによる課題解決
+### ラーメン二郎はどこに行っても行列店です。また、各店舗にはそこをホームとするジロリアンが多数存在するためWebアプリを通し、情報の発信、待ち時間の短縮につながればと思います。
+
+
+
+# アプリケーション情報
+## 接続先情報
+- http://####/
+### アカウント情報
+||Eメール|パスワード|
+|------|----|-------|
+|管理者|example@railstutorial.org|testtest|
+|ユーザー|---|---|
+## 各アカウントの権限
+||店舗の情報管理|各店舗でのメッセージ機能（未実装）|閲覧|
+|------|----|-------|-------|
+|管理者|○|○|○|
+|ログイン状態（ユーザー）|×|○|○|
+|ログアウト状態（ゲスト）|×|×|○|
+## 特徴
+- メッセージ機能は、基本的にユーザーが自由な内容を書き込めるが、待ち人数を発信することによって待ち時間の短縮に繋がったり、突然の休みの情報発信に使用できることを想定して実装している。
+
+
+
+# 開発状況
+## 開発環境
+- ruby/Ruby on Rails/haml/scss/javascript/MySQL/Github/AWS/VScode
+## 機能一覧
+- ログイン機能
+- 管理者権限機能
+- 店舗の登録・編集機能
+- carrierwaveによる画像の登録
+- Google_MAP_API（Maps JavaScript API）による地図表示
+
+
+
+# 動作確認方法
+- Chromeの最新版を利用してアクセスしてください。
+- ただしデプロイ等で接続できないタイミングもございます。その際は少し時間をおいてから接続ください。
+
+
+
+# ER図
+- https://www.draw.io/#G1LflmjzHYqGejR3j_lUim-TUfwe1eYjKh
+
+
+
+# DB設計
+
 ## 1. users Table
 |Column|Type|Options|
 |------|----|-------|
@@ -66,14 +117,3 @@ Things you may want to cover:
 ### Association
 - belongs_to :shop
 
-
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
