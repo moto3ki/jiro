@@ -39,6 +39,78 @@
         #map {
           margin: 0 auto;
         }
+        .shop-chat {
+          width: calc(80vw - 130px);
+          margin: 0 10vw 5vw 10vw;
+          .messages {
+            overflow: scroll;
+            background-color: #FAFAFA;
+            box-sizing: border-box;
+            padding: 46px 40px 0;
+            height: 30vh;
+            .message {
+              .upper-message {
+                display: flex;
+                &__user-name {
+                  color: #434a54;
+                  font-size: 16px;
+                  font-weight: bold;
+                }
+                &__date {
+                  color: #999;
+                  font-size: 12px;
+                  padding-left: 10px;
+                }
+              }
+              .lower-message {
+                margin-top: 10px;
+                &__content {
+                  color: #434a54;
+                  font-size: 14px;
+                  margin-bottom: 40px;
+                }
+              }
+            }
+          }
+          .form {
+            background-color: #DDDDDD;
+            box-sizing: border-box;
+            height: 90px;
+            padding: 20px 50px 20px 40px;
+            &__message {
+              padding-left: 10px;
+              border: none;
+              float: left;
+              height: 50px;
+              width: calc(100% - 160px);
+            }
+            &__mask {
+              background-color: white;
+              float: left;
+              height: 50px;
+              padding-right: 10px;
+              &__image {
+                font-size: 20px;
+                line-height: 50px;
+                cursor: pointer;
+              }
+              .hidden {
+                display: none;
+              }
+            }
+            &__submit {
+              background-color: $jiro_red;
+              border: none;
+              color: black;
+              float: right;
+              font-size: 16px;
+              height: 50px;
+              margin-left: 15px;
+              padding: 0 30px;
+              cursor: pointer;
+            }
+          }
+        }
       }
     }
   }

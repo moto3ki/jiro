@@ -6,6 +6,7 @@ class User < ApplicationRecord
   
   # has_many :visit_counts, dependent: :destroy
   has_many :shops
+  has_many :messages, dependent: :destroy
 
   validates :nickname,  presence: true, uniqueness: true
 

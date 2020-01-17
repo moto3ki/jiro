@@ -5,6 +5,8 @@ class ShopsController < ApplicationController
 
   def show
     @shop = Shop.find(params[:id])
+    @message = Message.new
+    @messages = @shop.messages.includes(:user)
   end
 
   def new
@@ -39,6 +41,10 @@ class ShopsController < ApplicationController
   private
   def shop_params
     params.require(:shop).permit(:name, :address, :latitude, :longitude, :map, :horiday, :opening_hours, :menu, :rule, :detail, noodle_images_attributes: [:id,:image])
+  end
+
+  def message_params
+    params.require(:message).permit(:content, :image).merge(user_id: current_user.id)
   end
 
   def set_shop
