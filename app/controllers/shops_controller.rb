@@ -16,7 +16,7 @@ class ShopsController < ApplicationController
 
   def create
     @shop = current_user.shops.new(shop_params)
-    @shop.save!
+    @shop.save
     redirect_to root_path
   rescue
     render :new
