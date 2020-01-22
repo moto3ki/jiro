@@ -1,6 +1,8 @@
 # アプリ名
 ## ラーメン二郎　Webアプリ店
 ### <img width="70%" alt="スクリーンショット 2020-01-15 2 19 57" src="https://user-images.githubusercontent.com/56962584/72366441-9b85ee80-373d-11ea-98fd-d9b48b2ecb24.png">
+### <img width="70%" alt="スクリーンショット 2020-01-22 16 07 53" src="https://user-images.githubusercontent.com/56962584/72872932-dab1d200-3d31-11ea-836e-f988545fbc5a.png">
+
 
 
 
@@ -26,12 +28,12 @@
 ||Eメール|パスワード|
 |------|----|-------|
 |管理者|example@railstutorial.org|testtest|
-|ユーザー|---|---|
+|ユーザー|testtest@yahoo.co.jp|testtest|
 ## 各アカウントの権限
-||店舗の情報管理|各店舗でのメッセージ機能（未実装）|閲覧|
+||店舗の情報管理|各店舗でのメッセージ機能|閲覧|
 |------|----|-------|-------|
 |管理者|○|○|○|
-|ログイン状態（ユーザー）|×|○|○|
+|ログイン状態（ユーザー）|×|○（未実装）|○|
 |ログアウト状態（ゲスト）|×|×|○|
 ## 特徴
 - メッセージ機能は、基本的にユーザーが自由な内容を書き込めるが、待ち人数を発信することによって待ち時間の短縮に繋がったり、突然の休みの情報発信に使用できることを想定して実装している。
@@ -47,6 +49,7 @@
 - 店舗の登録・編集機能
 - carrierwaveによる画像の登録
 - Google_MAP_API（Maps JavaScript API）による地図表示
+- 各店舗の掲示板メッセージ機能
 
 
 
@@ -57,7 +60,7 @@
 
 
 # ER図
-- https://www.draw.io/#G1LflmjzHYqGejR3j_lUim-TUfwe1eYjKh
+### <img width="70%" alt="スクリーンショット 2020-01-22 16 51 35" src="https://user-images.githubusercontent.com/56962584/72875468-aa6d3200-3d37-11ea-8441-c8173a71e0f4.png">
 
 
 
@@ -69,13 +72,17 @@
 |email|string|null: false, unique: true|
 |nickname|string|null: false, unique: true|
 |password|string|null: false|
+|admin|boolean|default: false|
+
 
 ### Association
-- has_many :visit_counts, dependent: :destroy
 - has_many :shops
+- has_many :messages, dependent: :destroy
+- has_many :visit_counts, dependent: :destroy
 
 
-## 2. visit_counts Table
+
+## 2. visit_counts Table(未実装)
 |Column|Type|Options|
 |------|----|-------|
 |user_id|references|null: false, foreign_key: true|
@@ -85,6 +92,8 @@
 
 ### Association
 - belongs_to :user
+- belongs_to :shop
+
 
 
 ## 3. shops Table
@@ -106,6 +115,9 @@
 ### Association
 - belongs_to :user
 - has_many :noodle_images, dependent: :destroy
+- has_many :messages
+- has_many :visit_counts, dependent: :destroy
+
 
 
 ## 4. noodle_images Table
@@ -116,4 +128,18 @@
 
 ### Association
 - belongs_to :shop
+
+
+## 5. messages Table
+|Column|Type|Options|
+|------|----|-------|
+|content|string|
+|image|string|
+|user_id|references|null: false, foreign_key: true|
+|shop_id|references|null: false, foreign_key: true|
+
+### Association
+- belongs_to :user
+- belongs_to :shop
+
 
