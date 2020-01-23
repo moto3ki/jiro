@@ -7,6 +7,7 @@
   min-height: 100%;
   background-color: $jiro_orange;
   border-right: solid 1px ;
+
     .login__name {
       font-size: x-large;
     }
@@ -19,22 +20,45 @@
       font-size: x-large;
       padding: 3px;
     }
+
   .jiro-now {
-    // color: red;
   }
-  .jiro-previous {
-    // color: red;
-  }
-  .jiro-inspire {
-    // color: red;
-  }
+
+  // .jiro-previous {
+  // }
+
+  // .jiro-inspire {
+  // }
+
   .other {
-    // color: red;
   }
+
     .title {
       color: $jiro_red;
     }
-    .shopname {
-      color: black;
-    }
+
+      .shop {
+        &__name {
+          color: black;
+        }
+        &__btn {
+          background-color: #fff;
+          border: none;
+          color: black;
+          border: 1.3px solid black;
+          text-decoration: none;
+          border-radius: 4px;
+          padding: 3px;
+          cursor: pointer;
+        }
+      }
+
+      .section {
+        .home {
+          color: black;
+        }
+        .shop-edit {
+          color: black;
+        }
+      }
 }

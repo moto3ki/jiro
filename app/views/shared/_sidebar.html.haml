@@ -9,18 +9,18 @@
   .jiro-now
     .title
       ラーメン二郎
-      .shopname
+      .shop
         - @shops.each do |shop|
-          = link_to shop.name + "店", shop
+          = link_to shop.name + "店", shop, class: 'shop__name'
           - if user_signed_in?
             - if current_user == @user || current_user.admin?
               %br/
           - if user_signed_in?
             - if current_user == @user || current_user.admin?
-              = link_to '編集', edit_shop_path(shop)
+              = link_to '編集', edit_shop_path(shop), class: 'shop__btn'
           - if user_signed_in?
             - if current_user == @user || current_user.admin?
-              = link_to '削除', shop_path(shop), method: :DELETE
+              = link_to '削除', shop_path(shop), method: :DELETE, class: 'shop__btn'
           %br/
 
   -# .jiro-previous
@@ -40,8 +40,9 @@
   .other
     .title
       その他
-    .title
-    = link_to "ホーム画面", root_path, method: :GET, class: 'shoplist-home'
-    .title
-      - if user_signed_in?
-        = link_to "店舗新規作成", new_shop_path, method: :GET, class: 'shoplist-edit'
+      .section
+        = link_to "ホーム画面", root_path, method: :GET, class: 'home'
+      .section
+        - if user_signed_in?
+          - if current_user == @user || current_user.admin?
+            = link_to "店舗新規作成", new_shop_path, method: :GET, class: 'shop-edit'
