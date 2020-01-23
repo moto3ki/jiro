@@ -16,7 +16,7 @@ CarrierWave.configure do |config|
     aws_secret_access_key: ENV["AWS_SECRET_ACCESS_KEY"],
     region: 'ap-northeast-1'
   }
-  config.fog_directory  = 'jiro63'
-  config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/jiro63'
+  config.fog_directory  = 'jiro63b'
+  config.asset_host = 'https://s3-ap-northeast-1.amazonaws.com/jiro63b'
   end
 end
