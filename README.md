@@ -1,6 +1,7 @@
 # アプリ名
 ## ラーメン二郎　Webアプリ店
-### <img width="70%" alt="スクリーンショット 2020-01-15 2 19 57" src="https://user-images.githubusercontent.com/56962584/72366441-9b85ee80-373d-11ea-98fd-d9b48b2ecb24.png">
+### <img width="70%" alt="スクリーンショット 2020-01-24 1 28 25" src="https://user-images.githubusercontent.com/56962584/73003400-efcd5480-3e48-11ea-8a10-f3983ffadf96.png">
+### <img width="50%" alt="スクリーンショット 2020-01-24 1 38 53" src="https://user-images.githubusercontent.com/56962584/73004264-5606a700-3e4a-11ea-80d1-3828139389de.png">
 ### <img width="70%" alt="スクリーンショット 2020-01-23 18 35 40" src="https://user-images.githubusercontent.com/56962584/72972690-4027c080-3e0f-11ea-9d85-f2f98b8aa5e7.png">
 
 
@@ -36,6 +37,10 @@
 |管理者|○|○|○|
 |ログイン状態（ユーザー）|×|○|○|
 |ログアウト状態（ゲスト）|×|×|○|
+### 画面サンプル
+|管理者|ログイン状態（ユーザー）|ログアウト状態（ゲスト）|
+|-------|--------|--------|
+|<img width="100%" alt="スクリーンショット 2020-01-24 1 28 25" src="https://user-images.githubusercontent.com/56962584/73003400-efcd5480-3e48-11ea-8a10-f3983ffadf96.png">|<img width="100%" alt="スクリーンショット 2020-01-24 1 58 30" src="https://user-images.githubusercontent.com/56962584/73005910-1bead480-3e4d-11ea-87fd-7afd8b76c8d5.png">|<img width="100%" alt="スクリーンショット 2020-01-24 1 58 42" src="https://user-images.githubusercontent.com/56962584/73005986-38870c80-3e4d-11ea-8b21-e73f6d824e38.png">|
 ## 特徴
 - メッセージ機能は、基本的にユーザーが自由な内容を書き込めるが、待ち人数を発信することによって待ち時間の短縮に繋がったり、突然の休みの情報発信に使用できることを想定して実装している。
 
