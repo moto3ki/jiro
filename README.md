@@ -60,7 +60,8 @@
 
 
 # ER図
-### <img width="70%" alt="スクリーンショット 2020-01-22 16 51 35" src="https://user-images.githubusercontent.com/56962584/72875468-aa6d3200-3d37-11ea-8441-c8173a71e0f4.png">
+### <img width="70%" alt="スクリーンショット 2020-01-23 16 42 41" src="https://user-images.githubusercontent.com/56962584/72965444-a99fd300-3dff-11ea-9d7f-fe9ad4641d64.png">
+
 
 
 
