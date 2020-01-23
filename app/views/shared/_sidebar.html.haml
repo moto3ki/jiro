@@ -10,30 +10,31 @@
     .title
       ラーメン二郎
       .shopname
-        %ul 三田本店
-        %ul 目黒店
-        %ul 仙川店
         - @shops.each do |shop|
           = link_to shop.name + "店", shop
+          %br/
           = link_to '編集', edit_shop_path(shop)
           = link_to '削除', shop_path(shop), method: :DELETE
+          %br/
 
-  .jiro-previous
-    .title
-      旧ラーメン二郎
-      .shopname
-        %ul 富士丸神谷本店
-        %ul 虎ノ門店
+  -# .jiro-previous
+  -#   .title
+  -#     旧ラーメン二郎
+  -#     .shopname
+  -#       %ul 富士丸神谷本店
+  -#       %ul 虎ノ門店
 
-  .jiro-inspire
-    .title
-      厳選二郎系
-      .shopname
-        %ul 陸
-        %ul いごっそう
+  -# .jiro-inspire
+  -#   .title
+  -#     厳選二郎系
+  -#     .shopname
+  -#       %ul 陸
+  -#       %ul いごっそう
 
   .other
     .title
       その他
+    .title
+    = link_to "ホーム画面", root_path, method: :GET, class: 'shoplist-home'
     .title
     = link_to "店舗新規作成", new_shop_path, method: :GET, class: 'shoplist-edit'
