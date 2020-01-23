@@ -1,6 +1,7 @@
 class MessagesController < ApplicationController
 
   before_action :set_shop
+  before_action :authenticate_user!, only: [:create]
 
   def index
     @message = Message.new
