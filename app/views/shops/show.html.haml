@@ -19,8 +19,7 @@
         .shop-content
           = @shop.opening_hours
         .shop-content
-          = @shop.map
-          -# googlemapAPIでは不要のカラムだったため、削除か店舗画像載せるか！？
+          = image_tag @shop.map.url
         #map{:style => "width: 600px; height: 500px;"}
         :javascript
           handler = Gmaps.build('Google');

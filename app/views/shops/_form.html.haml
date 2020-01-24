@@ -8,8 +8,8 @@
         .label__top 住所
         = f.text_field :address, class: 'form-panel'
       .label.clearfix
-        .label__top 地図
-        = f.text_field :map, class: 'form-panel'
+        .label__top 店舗写真
+        = f.file_field :map
       .label.clearfix
         .label__top 定休日
         = f.text_field :horiday, class: 'form-panel'

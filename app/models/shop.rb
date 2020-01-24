@@ -7,6 +7,8 @@ class Shop < ApplicationRecord
   geocoded_by :address
   after_validation :geocode, if: :address_changed?
 
+  mount_uploader :map, ImageUploader
+
   validates :name,  presence: true
   validates :address,  presence: true
   validates :map,  presence: true
