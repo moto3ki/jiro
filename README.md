@@ -66,7 +66,7 @@
 
 
 # ER図
-### <img width="70%" alt="スクリーンショット 2020-01-23 16 42 41" src="https://user-images.githubusercontent.com/56962584/72965444-a99fd300-3dff-11ea-9d7f-fe9ad4641d64.png">
+### <img width="70%" alt="スクリーンショット 2020-01-24 20 40 23" src="https://user-images.githubusercontent.com/56962584/73066614-d4feec80-3ee9-11ea-9616-29ef86d234f5.png">
 
 
 
