@@ -1,7 +1,7 @@
 # アプリ名
 ## ラーメン二郎　Webアプリ店
 ### <img width="70%" alt="スクリーンショット 2020-01-24 1 28 25" src="https://user-images.githubusercontent.com/56962584/73003400-efcd5480-3e48-11ea-8a10-f3983ffadf96.png">
-### <img width="50%" alt="スクリーンショット 2020-01-24 1 38 53" src="https://user-images.githubusercontent.com/56962584/73004264-5606a700-3e4a-11ea-80d1-3828139389de.png">
+### <img width="50%" alt="スクリーンショット 2020-01-24 20 32 01" src="https://user-images.githubusercontent.com/56962584/73066147-9ae11b00-3ee8-11ea-957f-a16246f03075.png">
 ### <img width="70%" alt="スクリーンショット 2020-01-23 18 35 40" src="https://user-images.githubusercontent.com/56962584/72972690-4027c080-3e0f-11ea-9d85-f2f98b8aa5e7.png">
 
 
