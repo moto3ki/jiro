@@ -16,5 +16,7 @@ class Shop < ApplicationRecord
   validates :opening_hours,  presence: true
   validates :menu,  presence: true
 
+  validates :noodle_images,  presence: true
+
 
 end
