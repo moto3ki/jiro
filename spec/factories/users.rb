@@ -1,10 +1,11 @@
 FactoryBot.define do
 
   factory :user do
-    nickname              {"hoge"}
-    email                 {"kkk@gmail.com"}
-    password              {"00000000"}
-    password_confirmation {"00000000"}
+    nickname              {"Lucy"}
+    email                 {"example@railstutorial.org"}
+    password              {"testtest"}
+    password_confirmation {"testtest"}
+    admin {"1"}
   end
 
 end
