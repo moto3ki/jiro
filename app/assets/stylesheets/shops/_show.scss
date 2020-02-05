@@ -8,7 +8,7 @@
       padding-bottom: 32768px;
       margin-bottom: -32768px;
       justify-content: flex-start;
-      width: calc(100vw - 130px);
+      width: calc(100vw - 150px);
       &__head {
         .title {
           color: $jiro_red;
@@ -40,7 +40,7 @@
           margin: 0 auto;
         }
         .shop-chat {
-          width: calc(80vw - 130px);
+          width: calc(80vw - 150px);
           margin: 0 10vw 5vw 10vw;
           .messages {
             overflow: scroll;

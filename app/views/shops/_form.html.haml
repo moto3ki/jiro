@@ -3,31 +3,31 @@
     .form
       .label.clearfix
         .label__top 店舗名
-        = f.text_field :name, class: 'form-panel'
+        = f.text_field :name, class: 'form-panel', size: 40
       .label.clearfix
         .label__top 住所
-        = f.text_field :address, class: 'form-panel'
+        = f.text_field :address, class: 'form-panel', size: 40
       .label.clearfix
         .label__top 店舗写真
         = f.file_field :map
       .label.clearfix
         .label__top 定休日
-        = f.text_field :horiday, class: 'form-panel'
+        = f.text_area :horiday, class: 'form-panel', size: "40x2"
       .label.clearfix
         .label__top 営業時間
-        = f.text_field :opening_hours, class: 'form-panel'
+        = f.text_area :opening_hours, class: 'form-panel', size: "40x3"
       .label.clearfix
         .label__top メニュー
-        = f.text_field :menu, class: 'form-panel'
+        = f.text_area :menu, class: 'form-panel', size: "40x5"
       .label.clearfix
         .label__top ローカルルール
-        = f.text_field :rule, class: 'form-panel'
+        = f.text_area :rule, class: 'form-panel', size: "40x5"
       .label.clearfix
         .label__top ラーメン画像
         = f.fields_for :noodle_images do |c|
           = c.file_field :image
       .label.clearfix
         .label__top メニュー詳細
-        = f.text_field :detail, class: 'form-panel'
+        = f.text_area :detail, class: 'form-panel', size: "40x5"
       .label.clearfix
         = f.submit "送信", class: 'form-submit'

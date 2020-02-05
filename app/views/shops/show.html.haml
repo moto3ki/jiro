@@ -15,9 +15,9 @@
         .shop-content
           = @shop.address
         .shop-content
-          = @shop.horiday
+          = safe_join(@shop.horiday.split("\n"),tag(:br))
         .shop-content
-          = @shop.opening_hours
+          = safe_join(@shop.opening_hours.split("\n"),tag(:br))
         .shop-content
           = image_tag @shop.map.url
         #map{:style => "width: 600px; height: 500px;"}
@@ -34,13 +34,13 @@
                 handler.getMap().setZoom(17);
               });
         .shop-content
-          = @shop.menu
+          = safe_join(@shop.menu.split("\n"),tag(:br))
         .shop-content
-          = @shop.rule
+          = safe_join(@shop.rule.split("\n"),tag(:br))
         .shop-noodleimage
           = image_tag @shop.noodle_images.first.image.to_s
         .shop-content
-          = @shop.detail
+          = safe_join(@shop.detail.split("\n"),tag(:br))
         .shop-chat
           .messages
             = render @messages
