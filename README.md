@@ -1,8 +1,9 @@
 # アプリ名
 ## ラーメン二郎　Webアプリ店
-### <img width="70%" alt="スクリーンショット 2020-01-24 1 28 25" src="https://user-images.githubusercontent.com/56962584/73003400-efcd5480-3e48-11ea-8a10-f3983ffadf96.png">
-### <img width="50%" alt="スクリーンショット 2020-01-24 20 32 01" src="https://user-images.githubusercontent.com/56962584/73066147-9ae11b00-3ee8-11ea-957f-a16246f03075.png">
-### <img width="70%" alt="スクリーンショット 2020-01-23 18 35 40" src="https://user-images.githubusercontent.com/56962584/72972690-4027c080-3e0f-11ea-9d85-f2f98b8aa5e7.png">
+### <img width="70%" alt="スクリーンショット 2020-02-06 0 59 43" src="https://user-images.githubusercontent.com/56962584/73859117-e39bbb00-487c-11ea-9875-7868d812727f.png">
+### <img width="50%" alt="スクリーンショット 2020-02-06 1 05 20" src="https://user-images.githubusercontent.com/56962584/73859204-06c66a80-487d-11ea-824c-11b5727578a7.png">
+### <img width="70%" alt="スクリーンショット 2020-02-06 1 08 42" src="https://user-images.githubusercontent.com/56962584/73859363-41c89e00-487d-11ea-8e0e-9b8f0b896a89.png">
+
 
 
 
@@ -40,7 +41,7 @@
 ### 画面サンプル
 |管理者|ログイン状態（ユーザー）|ログアウト状態（ゲスト）|
 |-------|--------|--------|
-|<img width="100%" alt="スクリーンショット 2020-01-24 1 28 25" src="https://user-images.githubusercontent.com/56962584/73003400-efcd5480-3e48-11ea-8a10-f3983ffadf96.png">|<img width="100%" alt="スクリーンショット 2020-01-24 1 58 30" src="https://user-images.githubusercontent.com/56962584/73005910-1bead480-3e4d-11ea-87fd-7afd8b76c8d5.png">|<img width="100%" alt="スクリーンショット 2020-01-24 1 58 42" src="https://user-images.githubusercontent.com/56962584/73005986-38870c80-3e4d-11ea-8b21-e73f6d824e38.png">|
+|<img width="100%" alt="スクリーンショット 2020-02-06 1 11 34" src="https://user-images.githubusercontent.com/56962584/73859695-cc110200-487d-11ea-8b45-4651a364cb2a.png">|<img width="100%" alt="スクリーンショット 2020-02-06 1 12 26" src="https://user-images.githubusercontent.com/56962584/73859757-e3e88600-487d-11ea-9a2b-7d7f0347b5b9.png">|<img width="100%" alt="スクリーンショット 2020-02-06 1 12 38" src="https://user-images.githubusercontent.com/56962584/73859820-ffec2780-487d-11ea-8550-6c88092e764e.png">|
 ## 特徴
 - メッセージ機能は、基本的にユーザーが自由な内容を書き込めるが、待ち人数を発信することによって待ち時間の短縮に繋がったり、突然の休みの情報発信に使用できることを想定して実装している。
 
